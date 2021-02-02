@@ -39,7 +39,7 @@ class ArmagetronadAT029 < Formula
 
   def caveats
     <<~EOS
-      You need to run Armagtron Advanced from the Terminal as 'armagetronad-0.2.8'.
+      You need to run Armagtron Advanced from the Terminal as 'armagetronad-0.2.9'.
       There is currently no shortcut in the Applications directory.
       Neither is a cask available.
     EOS
