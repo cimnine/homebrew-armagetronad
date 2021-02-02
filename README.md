@@ -10,7 +10,7 @@ In particular:
 * `brew install --HEAD cimnine/armagetronad/armagetronad@0.2.8`
 * `brew install --HEAD cimnine/armagetronad/armagetronad@0.2.9`
 
-Someoday maybe, but does not yet build or start without crashing:
+Someoday maybe, but does not yet run without crashing:
 
 * `brew install --HEAD cimnine/armagetronad/armagetronad`
 

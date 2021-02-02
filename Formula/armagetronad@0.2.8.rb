@@ -5,7 +5,7 @@ class ArmagetronadAT028 < Formula
   #url "https://gitlab.com/armagetronad/armagetronad/-/archive/v0.2.8.3.6/armagetronad-v0.2.8.3.6.tar.bz2"
   #sha256 "e95183f93f8da5b4459417085815a260d03aa03748003221ff507c3e469de915"
   head "https://gitlab.com/armagetronad/armagetronad.git", :branch => "release_0.2.8.3"
-  revision 1
+  revision 2
 
   depends_on "autoconf" => :build
   depends_on "automake" => :build
@@ -32,6 +32,7 @@ class ArmagetronadAT028 < Formula
                           "--disable-dependency-tracking",
                           "--disable-silent-rules",
                           "--disable-zthreadtest",
+                          "--disable-sysinstall",
                           "--disable-uninstall",
                           "--prefix=#{prefix}"
     system "make", "install"
