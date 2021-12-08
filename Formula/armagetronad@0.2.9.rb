@@ -4,8 +4,8 @@ class ArmagetronadAT029 < Formula
   license "GPL-2.0-only"
   #url "https://gitlab.com/armagetronad/armagetronad/-/archive/v0.2.9.1.0/armagetronad-v0.2.9.1.0.tar.bz2"
   #sha256 "09df905124667ea2bda7c85c4696b88684e18af1d31d6569e537d84a6166088b"
-  head "https://gitlab.com/armagetronad/armagetronad.git", :branch => "legacy_0.2.9"
-  revision 3
+  head "https://gitlab.com/armagetronad/armagetronad.git", :branch => "release_0.2.9"
+  revision 4
 
   depends_on "autoconf" => :build
   depends_on "automake" => :build
