@@ -5,7 +5,7 @@ class Armagetronad < Formula
   #url "https://gitlab.com/armagetronad/armagetronad/-/archive/v0.4.0.0.0/armagetronad-v0.4.0.0.0.tar.bz2"
   #sha256 "09df905124667ea2bda7c85c4696b88684e18af1d31d6569e537d84a6166088b"
   head "https://gitlab.com/armagetronad/armagetronad.git", :branch => "trunk"
-  revision 2
+  revision 3
 
   depends_on "autoconf" => :build
   depends_on "automake" => :build
@@ -14,6 +14,8 @@ class Armagetronad < Formula
   depends_on "libpng"
   depends_on "protobuf"
   depends_on "sdl2"
+  depends_on "sdl2_mixer"
+  depends_on "sdl2_image"
   depends_on "libxml2"
 
   uses_from_macos "python"
