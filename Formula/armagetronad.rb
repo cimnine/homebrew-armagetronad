@@ -10,9 +10,16 @@ class Armagetronad < Formula
   depends_on "autoconf" => :build
   depends_on "automake" => :build
   depends_on "boost" => :build
+  depends_on "protobuf" => :build
+  depends_on "protobuf-c" => :build
+  depends_on "create-dmg" => :build
+  depends_on "dylibbundler" => :build
+  depends_on "pkg-config" => :build
+  depends_on "python3" => :build
+  depends_on "wget" => :build
+  depends_on "glew"
   depends_on "ftgl"
   depends_on "libpng"
-  depends_on "protobuf"
   depends_on "sdl2"
   depends_on "sdl2_mixer"
   depends_on "sdl2_image"
@@ -22,12 +29,16 @@ class Armagetronad < Formula
 
   def install
     system "./bootstrap.sh"
-    system "./configure", "--disable-debug",
+    system "./configure", "--enable-automakedefaults",
+                          "--disable-restoreold",
+                          "--disable-debug",
                           "--disable-dependency-tracking",
+                          "--disable-initscripts",
                           "--disable-silent-rules",
-                          "--disable-zthreadtest",
                           "--disable-sysinstall",
                           "--disable-uninstall",
+                          "--disable-useradd",
+                          "--disable-zthreadtest",
                           "--prefix=#{prefix}"
     system "make", "install"
   end
